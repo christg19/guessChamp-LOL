@@ -1,6 +1,7 @@
 import mongoose, { Document, Schema } from 'mongoose';
 
 interface ChampionDocument extends Document {
+    image: string;
     name: string;
     gender: string;
     position: string;
@@ -12,6 +13,7 @@ interface ChampionDocument extends Document {
   }
   
   const ChampionSchema = new Schema<ChampionDocument>({
+    image: { type: String, required: true },
     name: { type: String, required: true },
     gender: { type: String, required: true },
     position: { type: String, required: true },

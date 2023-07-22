@@ -11,9 +11,10 @@ router.get('/champions', async (req:Request, res:Response)=>{
 })
 
 router.post('/championPost', async (req:Request, res:Response)=>{
-  const { name, position, specie, gender, rangeType, resource, region, release } = req.body;
+  const { image, name, position, specie, gender, rangeType, resource, region, release } = req.body;
 
   const newChampion = new ChampionModel({
+    image,
     name,
     gender,
     position,
