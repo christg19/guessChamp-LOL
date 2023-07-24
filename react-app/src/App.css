@@ -1,0 +1,28 @@
+.content-champ{
+        display: flex;
+        justify-content: center;
+}
+
+.age-different{
+        background-color: red;
+}
+
+.age-same {
+        background-color: green;
+}
+
+.year-different{
+        background-color: red;
+}
+
+.year-same {
+        background-color: green;
+}
+
+.position-different{
+        background-color: red;
+}
+
+.position-same {
+        background-color: green;
+}
